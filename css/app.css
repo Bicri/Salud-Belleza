@@ -15,14 +15,14 @@ h1, h2, h3{
 }
 
 h1{
-    font-size: 3.8rem;
+    font-size: 10rem;
 }
 
-@media(min-width: 768px){
+/* @media(min-width: 768px){
     h1{
         font-size: 5rem;
     }
-}
+} */
 
 h2{
     font-size: 3.2rem;
@@ -70,13 +70,79 @@ h3{
     }
 }
 
-/* .hero{
-    background-image: url(../img/principal.jpg);
+/* Video */
+.cabecera{
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    color: #fff;
+}
+
+.contenido{
+    max-width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin: auto;
+    text-align: center;
+}
+
+
+.cabecera-video{
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+}
+
+.cabecera-video video{
+    min-width: 100%;
+    /* min-height: 50%; */
+}
+
+.cabecera-overlay{
+    height: 50rem;
+    width: 100%;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    background-color: #303952;
+    z-index: 1;
+    opacity: .50;
+}
+
+.cabecera-content{
+    width: 100%;
+    z-index: 2;
+}
+
+.cabecera-content h1 {
+    font-size: 6.5rem;
+}
+
+@media (max-width: 576px){
+    .contenido{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .cabecera-content h1 {
+        font-size: 3rem;
+    }
+}
+
+  
+/*
+.hero{
+    background-image: url(../multimedia/video.mp4);
     height: 25rem;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
+
 
 @media (min-width: 768px){
     .hero{
