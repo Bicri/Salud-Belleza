@@ -10,13 +10,21 @@ body{
     line-height: 2;
 }
 
-h1, h2, h3{
-    /* font-family: 'Playfair Display', serif; */
+.bi{
+    font-size: 3.5rem;
+}
+
+img{
+    object-fit: cover;
+}
+
+/* h1, h2, h3{
+    font-family: 'Playfair Display', serif;
 }
 
 h1{
     font-size: 10rem;
-}
+} */
 
 /* @media(min-width: 768px){
     h1{
@@ -34,7 +42,7 @@ h2{
     }
 }
 
-h3{
+/* h3{
     font-size: 2.4rem;
 }
 
@@ -42,19 +50,23 @@ h3{
     h3{
         font-size: 3rem;
     }
-}
+} */
 
-.contenedor-navegacion-sticky{
-    position: sticky;
+
+
+.nav-statico{
+    position: fixed;
+    left: 0;
     top: 0;
-    background-color: white;
+    right: 0;
 }
 
 .nav-imagen{
     width: 40%;
+    padding: 0;
 }
 
-@media(max-width: 768px){
+@media(max-width: 991.5px){
     .nav-imagen{
         display: none;
     }
@@ -64,17 +76,27 @@ h3{
     width: 60%;
 }
 
-@media(max-width: 768px){
+@media(max-width: 991.5px){
     .nav-links{
         width: 100%;
     }
 }
 
+.img-nav-main{
+    height: 8rem;
+}
+
 /* Video */
+.contenedor-principal-video{
+    position: relative;
+    height: 50rem;
+    margin-top: 10rem;
+}
+
 .cabecera{
     height: 50rem;
     display: flex;
-    align-items: center;
+    justify-content: center;
     align-items: center;
     color: #fff;
 }
@@ -90,7 +112,7 @@ h3{
 
 .cabecera-video{
     position: absolute;
-    top: 10rem;
+    top: 0;
     left: 0;
     width: 100%;
     height: 50rem;
@@ -106,7 +128,7 @@ h3{
     height: 50rem;
     width: 100%;
     position: absolute;
-    top: 10rem;
+    top: 0;
     left: 0;
     background-color: #303952;
     z-index: 1;
@@ -133,6 +155,35 @@ h3{
     }
 }
 
+@media (min-width: 576px){
+    .contenido{
+        max-width: 100%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .cabecera-content h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 992px){
+    .contenido{
+        max-width: 100%;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .cabecera-content h1 {
+        font-size: 6.5rem;
+    }
+}
+
+/*FIN VIDEO*/
   
 /*
 .hero{

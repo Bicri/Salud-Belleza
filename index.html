@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Salud y Belleza</title>
 
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/app.css">
 
 </head>
 <body>
     
-    <header class="border-top py-5 contenedor-navegacion-sticky navbar navbar-dark bg-dark"  style="z-index:9999;">
+    <header class="border-top nav-statico navbar navbar-dark bg-dark"  style="z-index:9999;">
        <div class="navbar navbar-expand-lg container navbar-light ">
            <a class="navbar-brand text-white d-lg-none fs-2 fw-bold text-uppercase" href="index.html">
-               Logo
+                <img src="multimedia/logo.png" alt="Logo" class="img-fluid img-nav-main">
            </a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
                <span class="navbar-toggler-icon"></span>
@@ -25,10 +26,12 @@
            <div id="navegacion" class="collapse navbar-collapse">
                <nav class="container fs-2 d-flex flex-md-row text-center text-white">
                    <div class="nav-imagen text-start">
-                       Imagen
+                       <a href="index.html">
+                           <img src="multimedia/logo.png" alt="Logo" class="img-fluid img-nav-main">
+                       </a>
                    </div>
-                   <div class="d-flex flex-column flex-md-row justify-content-md-between nav-links" >
-                        <a class="text-white text-decoration-none" href="#">Inicio</a>
+                   <div class="d-flex align-items-center flex-column flex-md-row justify-content-md-between nav-links" >
+                        <a class="text-white text-decoration-none" href="index.html">Inicio</a>
                         <a class="text-white text-decoration-none" href="#">Nosotros</a>
                         <a class="text-white text-decoration-none" href="#">Servicios</a>
                         <a class="text-white text-decoration-none" href="#">Contacto</a>
@@ -38,30 +41,36 @@
        </div>
    </header>
 
-    <div class="cabecera contenido"> 
-        <div class="cabecera-video">
-            <video src="multimedia/video.mp4" autoplay loop muted></video> <!--autoplay loop-->
-        </div>
+   <section class="contenedor-principal-video">
+        <div class="cabecera contenido">
 
-        <div class="cabecera-overlay"></div>
+            <div class="cabecera-video">
+                <video src="multimedia/video.mp4" autoplay loop muted></video> autoplay loop
+            </div>
 
-        
-        <div class="cabecera-content">
-            <h1>Todo lo que necesitas para verte y sentirte bien en un solo lugar</h1>
+            <div class="cabecera-overlay"></div>
+
+            <div class="cabecera-content">
+                <h1>Todo lo que necesitas para verte y sentirte bien en un solo lugar</h1>
+            </div>
         </div>
-    </div>
+   </section>
 
 
     <main class="container-xl py-5" >
-       <h2 class="text-center my-5">Nombre Página</h2>
+       <h2 class=" my-5">Nosotros</h2>
     </main>
 
-    <footer class="py-5 bg-dark text-white">
+    <footer class="pt-2 pb-4 bg-dark text-white">
         <div class="container-xl mt-5">
            <div class="row">
 
-               <div class="col-md-3 mb-4 mb-md-0 text-center">
-                   Imagen
+               <div class="col-md-3 mb-4 mb-md-0">
+                   <div class="w-100 d-flex justify-content-center">
+                       <a href="index.html">
+                           <img src="multimedia/logo.png" alt="Logo" class="img-fluid img-nav-main">
+                       </a>
+                   </div>
                </div>
 
                <div class="col-md-6 mb-4 mb-md-0 text-center">
@@ -69,8 +78,10 @@
                 <span>Powered by Kaansah</span>
                </div>
 
-               <div class="col-md-3 mb-4 mb-md-0 text-center">
-                   Redes sociales
+               <div class="col-md-3 mb-4 mb-md-0 text-center d-flex justify-content-around ">
+                   <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                   <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                   <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
                </div>
 
            </div>
