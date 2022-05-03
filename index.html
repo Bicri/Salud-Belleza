@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="multimedia/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="multimedia/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="multimedia/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="multimedia/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="multimedia/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="multimedia/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="multimedia/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="multimedia/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="multimedia/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="multimedia/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="multimedia/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="multimedia/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="multimedia/favicon/favicon-16x16.png">
+    <link rel="manifest" href="multimedia/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="multimedia/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
     <title>Salud y Belleza</title>
 
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
@@ -35,17 +57,17 @@
                        </a>
                    </div>
                    <div class="d-flex align-items-center flex-column flex-md-row justify-content-md-between nav-links" >
-                        <a class="text-white fw-bold text-decoration-none" href="index.html">Inicio</a>
-                        <a class="text-white fw-bold text-decoration-none" href="#">Nosotros</a>
-                        <a class="text-white fw-bold text-decoration-none" href="#">Servicios</a>
-                        <a class="text-white fw-bold text-decoration-none" href="#">Contacto</a>
+                        <a class="text-white fw-bold text-decoration-none hov " href="#sec-inicio" data-text="sec-inicio" id="Inicio">Inicio</a>
+                        <a class="text-white fw-bold text-decoration-none hov" href="#sec-nosotros"  data-text="sec-nosotros" id="Nosotros">Nosotros</a>
+                        <a class="text-white fw-bold text-decoration-none hov" href="#sec-servicios" data-text="sec-servicios" id="Servicios">Servicios</a>
+                        <a class="text-white fw-bold text-decoration-none hov" href="#sec-contacto"  data-text="sec-contacto" id="Contacto">Contacto</a>
                    </div>   
                </nav>
            </div>
        </div>
    </header>
 
-   <section class="contenedor-principal-video">
+   <section class="contenedor-principal-video comun" id="sec-inicio">
         <div class="cabecera contenido">
 
             <div class="cabecera-video">
@@ -60,14 +82,14 @@
         </div>
    </section>
 
-   <section class="pt-5 pb-3">
+   <section class="py-5 comun" id="sec-nosotros">
 
        <div class="container-xl">
            <h2 class="my-5">Sobre Nosotros</h2>
    
            <div class="row g-5 align-items-center">
                <div class="col-md-6">
-                   <img src="multimedia/nosotros.jpg" alt="Imagen Nosotros" class="img-fluid rounded nosotros" > 
+                   <img src="multimedia/equipo.png" alt="Imagen Nosotros" class="img-fluid rounded nosotros" > 
                </div>
                <div class="col-md-6">
                    <h3 class="mb-md-5">BH SALUD Y BELLEZA</h3>
@@ -89,7 +111,7 @@
 
    </section>
 
-    <main class="py-5" >
+    <main class="py-5 comun" id="sec-servicios">
 
         <div class="d-flex flex-column text-center text-white bg-dark py-5">
             <div>
@@ -223,159 +245,161 @@
             
 
             <div class="mt-5 w-100 d-flex justify-content-center py-5">
-                <a href="#" class="btn-ghost round d-inline-block  fs-1 fw-bold">Contáctanos</a>
+                <a href="#sec-contacto" class="btn-ghost round d-inline-block  fs-1 fw-bold">Contáctanos</a>
             </div>
         </div>
+
+        <section class="mb-5">
+            <div class="container-xl mb-5">
+                <h2 class="text-center mb-5">Servicios Integrales</h2>
+                <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum itaque, unde quos quidem iusto eligendi ad facere libero? Mollitia illum exercitationem pariatur ex voluptas laboriosam? Laboriosam similique consequatur mollitia sequi!</p>
+    
+                <div class="row swiper mySwiper ">
+                    <div class="item swiper-wrapper">
+    
+                        <div class="card swiper-slide border-0 shadow-lg align-items-center">
+                            <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
+                            <div class="card-body">
+                                <h3 class="card-title">Psicología</h3>
+                                <ul class="mt-4 card-text">
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
+                                        vitae suscipit deserunt cupiditate fugiat reprehenderit.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimos repellat vero dolor voluptatibus 
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimo
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="card swiper-slide border-0 shadow-lg align-items-center">
+                            <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
+                            <div class="card-body">
+                                <h3 class="card-title">Nutrición</h3>
+                                <ul class="mt-4 card-text">
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
+                                        vitae suscipit deserunt cupiditate fugiat reprehenderit.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimos repellat vero dolor voluptatibus 
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimo
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="card swiper-slide border-0 shadow-lg align-items-center ">
+                            <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
+                            <div class="card-body">
+                                <h3 class="card-title">Especialidad 1</h3>
+                                <ul class="mt-4 card-text">
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
+                                        vitae suscipit deserunt cupiditate fugiat reprehenderit.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimos repellat vero dolor voluptatibus 
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimo
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="card swiper-slide border-0 shadow-lg align-items-center">
+                            <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
+                            <div class="card-body">
+                                <h3 class="card-title">Especialidad 2</h3>
+                                <ul class="mt-4 card-text">
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
+                                        vitae suscipit deserunt cupiditate fugiat reprehenderit.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimos repellat vero dolor voluptatibus 
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimo
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="card swiper-slide border-0 shadow-lg align-items-center">
+                            <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
+                            <div class="card-body">
+                                <h3 class="card-title">Especialidad 3</h3>
+                                <ul class="mt-4 card-text">
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
+                                        vitae suscipit deserunt cupiditate fugiat reprehenderit.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimos repellat vero dolor voluptatibus 
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimo
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="card swiper-slide border-0 shadow-lg align-items-center">
+                            <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
+                            <div class="card-body">
+                                <h3 class="card-title">Especialidad 4</h3>
+                                <ul class="mt-4 card-text">
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
+                                        vitae suscipit deserunt cupiditate fugiat reprehenderit.
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimos repellat vero dolor voluptatibus 
+                                    </li>
+                                    <li>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
+                                         dignissimo
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+                    
+    
+    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+    
+            </div>
+        </section>
     </main>
 
-    <section id="Servicios-Integrales" class="mb-5">
-        <div class="container-xl mb-5">
-            <h2 class="text-center mb-5">Servicios Integrales</h2>
-            <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum itaque, unde quos quidem iusto eligendi ad facere libero? Mollitia illum exercitationem pariatur ex voluptas laboriosam? Laboriosam similique consequatur mollitia sequi!</p>
+    
 
-            <div class="row swiper mySwiper ">
-                <div class="item swiper-wrapper">
-
-                    <div class="card swiper-slide border-0 shadow-lg align-items-center">
-                        <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
-                        <div class="card-body">
-                            <h3 class="card-title">Psicología</h3>
-                            <ul class="mt-4 card-text">
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
-                                    vitae suscipit deserunt cupiditate fugiat reprehenderit.
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimos repellat vero dolor voluptatibus 
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimo
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide border-0 shadow-lg align-items-center">
-                        <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
-                        <div class="card-body">
-                            <h3 class="card-title">Nutrición</h3>
-                            <ul class="mt-4 card-text">
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
-                                    vitae suscipit deserunt cupiditate fugiat reprehenderit.
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimos repellat vero dolor voluptatibus 
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimo
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide border-0 shadow-lg align-items-center ">
-                        <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
-                        <div class="card-body">
-                            <h3 class="card-title">Especialidad 1</h3>
-                            <ul class="mt-4 card-text">
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
-                                    vitae suscipit deserunt cupiditate fugiat reprehenderit.
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimos repellat vero dolor voluptatibus 
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimo
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide border-0 shadow-lg align-items-center">
-                        <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
-                        <div class="card-body">
-                            <h3 class="card-title">Especialidad 2</h3>
-                            <ul class="mt-4 card-text">
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
-                                    vitae suscipit deserunt cupiditate fugiat reprehenderit.
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimos repellat vero dolor voluptatibus 
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimo
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide border-0 shadow-lg align-items-center">
-                        <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
-                        <div class="card-body">
-                            <h3 class="card-title">Especialidad 3</h3>
-                            <ul class="mt-4 card-text">
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
-                                    vitae suscipit deserunt cupiditate fugiat reprehenderit.
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimos repellat vero dolor voluptatibus 
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimo
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="card swiper-slide border-0 shadow-lg align-items-center">
-                        <img src="multimedia/facial.jpg" alt="Imagen Servicio Facial" class="card-img-top img-fluid circular">
-                        <div class="card-body">
-                            <h3 class="card-title">Especialidad 4</h3>
-                            <ul class="mt-4 card-text">
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error obcaecati, 
-                                    vitae suscipit deserunt cupiditate fugiat reprehenderit.
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimos repellat vero dolor voluptatibus 
-                                </li>
-                                <li>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestiae placeat blanditiis
-                                     dignissimo
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    
-                </div>
-                
-
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="mt-5 py-5">
+    <section class="mt-5 py-5 comun" id="sec-contacto">
         <div class="container-xl">
             <h2 class="text-center">Contacto</h2>
     
             <h3 class="mt-5 text-center">!REMBOLSO EN TU PRIMER TRATAMIENTO!</h3>
     
-            <p class=" my-5 px-5 mx-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi, aliquam dignissimos ipsam soluta
+            <p class="mt-5 px-md-5 mx-md-5 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi, aliquam dignissimos ipsam soluta
                  repudiandae earum nihil architecto, hic doloremque velit molestias cum eum distinctio! Mollitia cumque culpa minus vel.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae enim atque illo, magnam, totam soluta alias qui quia magni minima, 
                   laborum ducimus? Distinctio illum molestias libero voluptatibus inventore commodi dolores!
@@ -450,7 +474,7 @@
 
 
                 <div class="col-md-5">
-                    <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                    <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center" >
                         <div class="w-100 pt-5 d-flex align-items-center">
                             <i class="bi bi-geo-alt-fill"></i>    
                             <a href="https://goo.gl/maps/f5RKJNkjTQXqMWE2A" class="ps-5 pe-0 text-decoration-none text-dark d-block" target="_blank">Av. Río Churubusco 601, Xoco, 03330 Ciudad de México, CDMX</a>
@@ -529,6 +553,8 @@
         },
       });
     </script>
+
+    <script src="js/scroll.js"></script>
 
 </body>
 </html>

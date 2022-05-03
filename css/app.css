@@ -2,6 +2,7 @@
 
 html{
     font-size: 62.5%;   /* 1rem en 10 px */
+    scroll-behavior: smooth;
 }
 
 body{
@@ -55,7 +56,7 @@ h3{
 
 
 .nav-statico{
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     right: 0;
@@ -84,13 +85,24 @@ h3{
 
 .img-nav-main{
     height: 8rem;
+    position: relative;
 }
+
+.activo{
+    text-decoration: underline!important;
+}
+
+.hov:hover{
+    text-shadow: 0 0 2rem white;
+    text-decoration: underline;
+}
+
 
 /* Video */
 .contenedor-principal-video{
     position: relative;
     height: 50rem;
-    margin-top: 10rem;
+    margin-top: 0;
 }
 
 .cabecera{
@@ -290,9 +302,24 @@ h3{
      padding: 0.5rem 1rem;
      position: absolute;
      left: 25%;
-     
-
+    
  }
+
+
+ @media (max-width: 1200px){
+    #btnEnviar{
+        transform: translateX(-17%);
+       
+    }
+}
+
+@media (max-width: 375px){
+    #btnEnviar{
+        transform: translateX(-25%);
+       
+    }
+}
+
 /* .owl-prev{
     left: 0px;
 }
