@@ -10,10 +10,10 @@ addEventListener('DOMContentLoaded', () =>{
             if(entry.isIntersecting){
                 // console.log(entry.target.id)
                 const itemActual = Array.from(itemsMenu).find( item => item.getAttribute('data-text') === entry.target.id )
-                itemActual.classList.add('activo')
+                // itemActual.classList.add('activo')
                 for(const item of itemsMenu){
                     if(item != itemActual){
-                        item.classList.remove('activo')
+                        // item.classList.remove('activo')
                     }
                 }
             }

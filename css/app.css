@@ -53,17 +53,28 @@ h3{
     }
 } */
 
+.hero{
+    background-image: url(../multimedia/bg.jpg);
+    /* height: 25rem; */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
+.fondo-morado{
+    background-color: #D3C4DD;
+}
 
 .nav-statico{
     position: sticky;
     left: 0;
     top: 0;
     right: 0;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px */
 }
 
 .nav-imagen{
-    width: 40%;
+    width: 30%;
     padding: 0;
 }
 
@@ -74,7 +85,8 @@ h3{
 }
 
 .nav-links{
-    width: 60%;
+    width: 70%;
+    position: relative;
 }
 
 @media(max-width: 991.5px){
@@ -89,24 +101,49 @@ h3{
 }
 
 .activo{
-    text-decoration: underline!important;
+    background-color: white;
+    color: black !important;
+    border-radius: 3px;
+    opacity: .5;
 }
 
+.hov{
+    /* text-shadow: 0 0 2rem white;
+    text-decoration: underline; */
+    width: 20%;
+    color: #f0f0f0 !important;
+    transition: .3s ease-in-out all;
+
+}
 .hov:hover{
-    text-shadow: 0 0 2rem white;
-    text-decoration: underline;
+    /* text-shadow: 0 0 2rem white;
+    text-decoration: underline; */
+    background-color: white;
+    color: black !important;
+    border-radius: 3px;
+    opacity: .5;
 }
 
-
+.indicador{
+    display: block;
+    width: 200px;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    bottom: -8px;
+    transition: .3s ease-out all;
+    border-radius: 2px;
+    
+}
 /* Video */
 .contenedor-principal-video{
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 8rem);
     margin-top: 0;
 }
 
 .cabecera{
-    height: 100vh;
+    height: calc(100vh - 8rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +164,7 @@ h3{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 8rem);
     overflow: hidden;
 }
 
@@ -137,7 +174,7 @@ h3{
 }
 
 .cabecera-overlay{
-    height: 100vh;
+    height: calc(100vh - 8rem);
     width: 100%;
     position: absolute;
     top: 0;
@@ -198,7 +235,8 @@ h3{
 /*FIN VIDEO*/
 
 .nosotros{
-    height: 50rem;
+    /* height: 10rem !important: */
+    border-radius: 1rem !important;
 }
 .ivonne{
     height: 40rem;
@@ -298,8 +336,8 @@ h3{
   }
 
   .circular{
-      height: 27rem !important;
-      width: 27rem !important;
+      height: 30rem !important;
+      width: 30rem !important;
       border-radius: 50%;
   }
 
@@ -339,6 +377,7 @@ h3{
 
 .p-nosotr{
     padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 .p-serv{
     padding-top: 7rem;
