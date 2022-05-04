@@ -1,52 +1,39 @@
 addEventListener('DOMContentLoaded', () =>{
 
 
-    let secciones = document.querySelectorAll('.comun');
-    let itemsMenu = document.querySelectorAll('#navegacion .hov');
- 
-    
-    const funcionObserver = entries =>{
-        entries.forEach( entry => {
-            if(entry.isIntersecting){
-                // console.log(entry.target.id)
-                const itemActual = Array.from(itemsMenu).find( item => item.getAttribute('data-text') === entry.target.id )
-                // itemActual.classList.add('activo')
-                for(const item of itemsMenu){
-                    if(item != itemActual){
-                        // item.classList.remove('activo')
+    const secciones = document.querySelectorAll('.comun');
+    const itemsMenu = document.querySelectorAll('.nav-links a'); //menu
+    const indicador = document.querySelector('.indicador');
+    let tamanoIndicador = itemsMenu[0].offsetWidth;
+    let indexSeccionActiva;
+
+
+   indicador.style.width = tamanoIndicador + 'px';
+
+   const observer = new IntersectionObserver( (entradas, observer) => {
+        entradas.forEach( entrada => {
+            if(entrada.isIntersecting){
+                if(screen.width<992){
+                    const itemActual = [...itemsMenu].find( item => item.getAttribute('data-text') === entrada.target.id)
+                    itemActual.classList.add('activo')
+                    for(const item of itemsMenu){
+                        if(item != itemActual){
+                            item.classList.remove('activo')
+                        }
                     }
+                }else{
+                    indexSeccionActiva = [...secciones].indexOf(entrada.target);
+                    indicador.style.transform = `translateX(${tamanoIndicador * indexSeccionActiva}px)`;
                 }
             }
         })
-    }
-    
-
-    const observer = new IntersectionObserver(funcionObserver, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    })
-    const observer2 = new IntersectionObserver(funcionObserver, {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.3
-    })
-    
+   }, {
+       rootMargin: '-80px 0px 0px 0px',
+       threshold: 0.2
+   } )
 
 
-    if(screen.height >= 900){
-        console.log("mayor a 900 height");
-        
-        
-    }
-    else if(screen.width<=576)
-    {
-        console.log("menor o igual a 576")
-        secciones.forEach(seccion => observer.observe(seccion))
-    }else
-    {
-        secciones.forEach(seccion => observer2.observe(seccion))
-    }
-    // secciones.forEach(seccion => observer.observe(seccion))
+   secciones.forEach( seccion => observer.observe(seccion) )
+
 })
 

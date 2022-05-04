@@ -95,34 +95,40 @@ h3{
     }
 }
 
+.activo{
+    /* background-color: white;
+    color: red !important;
+    border-radius: 3px;
+    opacity: .5; */
+    background-color: #f0f0f0;
+    opacity: .5;
+    color: black !important;
+    border-radius: 3px;
+}
+
+.nav-links a{
+    transition: .3s ease-in-out all;
+    width: 20%;
+    color: #f0f0f0;
+    transition: .3s ease-in-out all;
+}
+
+.nav-links a:hover{
+    /* text-shadow: 0 0 2rem white;
+    text-decoration: underline; */
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    opacity: .5;
+}
+
+
 .img-nav-main{
     height: 8rem;
     position: relative;
 }
 
-.activo{
-    background-color: white;
-    color: black !important;
-    border-radius: 3px;
-    opacity: .5;
-}
 
-.hov{
-    /* text-shadow: 0 0 2rem white;
-    text-decoration: underline; */
-    width: 20%;
-    color: #f0f0f0 !important;
-    transition: .3s ease-in-out all;
-
-}
-.hov:hover{
-    /* text-shadow: 0 0 2rem white;
-    text-decoration: underline; */
-    background-color: white;
-    color: black !important;
-    border-radius: 3px;
-    opacity: .5;
-}
 
 .indicador{
     display: block;
@@ -252,6 +258,12 @@ h3{
 }
 
 /* styles owl carousel*/
+#sec-servicios .card{
+    line-height: 1.5;
+    height: 44rem;
+}
+
+
 .owl-theme .owl-dots .owl-dot span {
     border-radius: 25px;
     height: 7px;
@@ -277,24 +289,26 @@ h3{
 }
 
 .owl-carousel .owl-nav button.owl-next{
-    top: 2rem;
+    top: 50%;
+    transform: translateY(-70%);
     right: 0rem;
 }
 
-#servicios-integrales .owl-carousel .owl-nav button.owl-next{
+/* #servicios-integrales .owl-carousel .owl-nav button.owl-next{
     top: 20rem;
     right: 0rem;
-}
+} */
 
 .owl-carousel .owl-nav button.owl-prev {
-    top: 2rem;
+    top: 50%;
+    transform: translateY(-70%);
     left: 0rem;
 }
 
-#servicios-integrales .owl-carousel .owl-nav button.owl-prev {
+/* #servicios-integrales .owl-carousel .owl-nav button.owl-prev {
     top: 20rem;
     left: 0rem;
-}
+} */
 
 .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover {
     background: transparent;
