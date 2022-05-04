@@ -328,8 +328,8 @@ h3{
     text-decoration: none;
     background: purple;
     transition: color 0.5s, background 0.5s;
-    margin-left: 30px;
-    margin-bottom: 15px;
+    /* margin-left: 30px;
+    margin-bottom: 15px; */
     font-size: 1em;
     min-width: 140px;
     text-align: center;
@@ -388,6 +388,12 @@ h3{
        
     }
 }
+
+.falsa-ancla{
+    height: 10rem;
+    background-color: transparent;
+}
+
 
 .p-nosotr{
     padding-top: 7rem;

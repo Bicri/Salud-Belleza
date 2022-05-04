@@ -61,10 +61,10 @@
                    </div>
                    <div class="w-100 d-flex align-items-center flex-column flex-md-row justify-content-md-between nav-links" >
                         <a class="d-block d-flex align-items-center justify-content-center h-100 fw-bold text-decoration-none " href="#" data-text="sec-inicio" id="Inicio">Inicio</a>
-                        <a class="d-block d-flex align-items-center justify-content-center h-100 fw-bold text-decoration-none " href="#sec-nosotros"  data-text="sec-nosotros" id="Nosotros">Nosotros</a>
-                        <a class="d-block d-flex align-items-center justify-content-center h-100 fw-bold text-decoration-none " href="#sec-servicios" data-text="sec-servicios" id="Servicios">Servicios</a>
-                        <a class="d-block d-flex align-items-center justify-content-center h-100 fw-bold text-decoration-none " href="#sec-integrales" data-text="sec-integrales" id="Integrales">Integrales</a>
-                        <a class="d-block d-flex align-items-center justify-content-center h-100 fw-bold text-decoration-none " href="#sec-contacto"  data-text="sec-contacto" id="Contacto">Contacto</a>
+                        <a class="d-block d-flex align-items-center justify-content-center h-100 fw-bold text-decoration-none " href="#fake-ancla-nosotros"  data-text="sec-nosotros" id="Nosotros">Nosotros</a>
+                        <a class="d-block d-flex align-items-center justify-content-center h-100 fw-bold text-decoration-none " href="#fake-ancla-servicios" data-text="sec-servicios" id="Servicios">Servicios</a>
+                        <a class="d-block d-flex align-items-center justify-content-center h-100 fw-bold text-decoration-none " href="#fake-ancla-integrales" data-text="sec-integrales" id="Integrales">Integrales</a>
+                        <a class="d-block d-flex align-items-center justify-content-center h-100 fw-bold text-decoration-none " href="#fake-ancla-contacto"  data-text="sec-contacto" id="Contacto">Contacto</a>
                         <span class="indicador" id="indicador"></span>
                    </div>   
                </nav>
@@ -87,10 +87,13 @@
         </div>
    </section>
 
-   <section class="comun p-nosotr hero overflow-hidden" id="sec-nosotros">
+   <section class="comun hero overflow-hidden" id="sec-nosotros">
 
        <div class="container-xl position-relative">
-           <h2 class="my-5">Sobre Nosotros</h2>
+
+           <div class="falsa-ancla" id="fake-ancla-nosotros"></div> <!--falsa ancla para solventar error en scroll-behavior-->
+
+           <h2 class="mb-5">Sobre Nosotros</h2>
    
            <div class="row g-5 align-items-center">
                <div class="col-md-12 col-lg-6">
@@ -115,7 +118,7 @@
                </div>
            </div>
    
-           <div class="row my-sm-3 my-md-5  align-items-center">
+           <div class="row mt-sm-3 mt-md-5  align-items-center">
                <div class="col-md-6">
                    <h3 class="mb-md-5 text-md-end">Ivonne Hernández</h3>
                    <p class="text-md-end ps-md-5">
@@ -132,6 +135,8 @@
                    <img src="multimedia/Ivonne.jpeg" alt="Imagen Nosotros" class="img-fluid ivonne shadow" > 
                </div>
            </div>
+
+           <div class="falsa-ancla" id="fake-ancla-servicios"></div> <!--falsa ancla para solventar error en scroll-behavior-->
        </div>
 
    </section>
@@ -666,17 +671,22 @@
                     </div>
                     
         
-                    <div class="mt-5 w-100 d-flex justify-content-center py-5">
+                    <div class="mt-5 w-100 d-flex justify-content-center pt-5">
                         <a href="#sec-contacto" class="btn-ghost round d-inline-block  fs-1 fw-bold">Contáctanos</a>
                     </div>
+
+                    <div class="falsa-ancla"></div> <!--falsa ancla para solventar error en scroll-behavior-->
+
                 </div>
             </div>
-
         </section>
 
 
         <section class="comun hero" id="sec-integrales">
             <div class="container-xl" >
+
+                <div class="falsa-ancla" id="fake-ancla-integrales"></div> <!--falsa ancla para solventar error en scroll-behavior-->
+
                 <h2 class="text-center mb-5">Servicios Integrales</h2>
                 <p class="text-center mb-5">
                     Contamos con servicios integrales que complementan los tratamientos estéticos, no solo
@@ -763,13 +773,19 @@
 
 
             </div>
+
+
+            <div class="falsa-ancla"></div> <!--falsa ancla para solventar error en scroll-behavior-->
         </section>
     </main>
 
     
 
-    <section class="p-contacto comun fondo-morado" id="sec-contacto">
+    <section class="comun fondo-morado" id="sec-contacto">
         <div class="container-xl">
+
+            <div class="falsa-ancla" id="fake-ancla-contacto"></div> <!--falsa ancla para solventar error en scroll-behavior-->
+
             <h2 class="text-center">Contacto</h2>
     
             <h3 class="mt-5 text-center">!REMBOLSO EN TU PRIMER TRATAMIENTO!</h3>
@@ -872,6 +888,7 @@
             </div>
         </div>
         
+        <div class="falsa-ancla"></div> <!--falsa ancla para solventar error en scroll-behavior-->
     </section>
 
     <footer class="pt-2 pb-4 bg-dark text-white">
