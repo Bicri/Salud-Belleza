@@ -394,25 +394,14 @@ h3{
     background-color: transparent;
 }
 
-
-.p-nosotr{
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-.p-serv{
-    padding-top: 7rem;
-}
-.p-manual{
-    padding-top: 7rem;
-}
-.p-contacto{
-    padding-top: 9rem ;
-    padding-bottom: 10rem;
+.last{
+    height: 10rem;
+    background-color: transparent;
 }
 
 @media (max-width: 767.5px){
-    .p-contacto{
-        padding-bottom: 5rem;
+    .last{
+        height: 1rem;
     }
 }
 /* .p-especialB{
