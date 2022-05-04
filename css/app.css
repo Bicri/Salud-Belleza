@@ -321,7 +321,6 @@ h3{
 
 .btn-ghost{
     position: relativate;
-    /* display: inline-block; */
     border: 2px solid purple;
     padding: 20px 80px;
     color: white;
@@ -364,30 +363,17 @@ h3{
      max-width: 50rem;
      position: relative;
      border-radius: 10%;
-     width: 90%;
+     width: 100%;
  }
 
  #btnEnviar{
      padding: 0.5rem 1rem;
      position: absolute;
-     left: 25%;
+     left: 50%;
+     transform: translateX(-50%);
     
  }
 
-
- @media (max-width: 1200px){
-    #btnEnviar{
-        transform: translateX(-17%);
-       
-    }
-}
-
-@media (max-width: 375px){
-    #btnEnviar{
-        transform: translateX(-25%);
-       
-    }
-}
 
 .falsa-ancla{
     height: 10rem;
