@@ -24,7 +24,7 @@ const enviarCorreo = async (formulario) => {
   formulario.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    if(document.querySelector('#nombre').value.length>0 && document.querySelector('#asunto').value.length>0 && document.querySelector('#email').value.length>0 && document.querySelector('#telefono').value.length>0 && document.querySelector('#mensaje').value.length>0)
+    if(document.querySelector('#nombretxt').value.length>0 && document.querySelector('#emailtxt').value.length>0 && document.querySelector('#telefonotxt').value.length>0 && document.querySelector('#mensajetxt').value.length>0)
     {
 
       let formularioDatos = new FormData(formulario);
@@ -35,7 +35,7 @@ const enviarCorreo = async (formulario) => {
       const body = document.querySelector('#bodyToast');
       enviarCorreo(formularioDatos)
         .then((response) => {      
-          console.log(response);       
+          console.log(response);
           
           if (response!="Correo enviado con éxito")
           {
@@ -46,11 +46,10 @@ const enviarCorreo = async (formulario) => {
             body.textContent = response;
             toast.show();
             formulario.classList.remove('was-validated');
-            document.querySelector('#nombre').value = "";
-            document.querySelector('#asunto').value = "";
-            document.querySelector('#email').value = "";
-            document.querySelector('#telefono').value = "";
-            document.querySelector('#mensaje').value = "";
+            document.querySelector('#nombretxt').value = "";
+            document.querySelector('#emailtxt').value = "";
+            document.querySelector('#telefonotxt').value = "";
+            document.querySelector('#mensajetxt').value = "";
           }
             
         })

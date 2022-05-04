@@ -3,17 +3,17 @@ include("../Mailer/src/PHPMailer.php");
 include("../Mailer/src/SMTP.php");
 include("../Mailer/src/Exception.php");
 
-        $nombre = $_POST['nombre'];
-        $destinatario = $_POST["email"];
-        $asunto = $_POST["asunto"];
-        $numero = $_POST["telefono"];
-        $cuerpo = $_POST["mensaje"];
+        $nombre = $_POST['nombretxt'];
+        $destinatario = $_POST["emailtxt"];
+        $numero = $_POST["telefonotxt"];
+        $cuerpo = $_POST["mensajetxt"];
+        $asunto = "Contactanos";
 
         $body = '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"></head><body>'.'<strong>Hola, mi nombre es '.$nombre.'</strong> <br><br>'.$cuerpo.'<br><br> <i>Atte. '.$nombre.'<br>'.'Numero: '.$numero.'</i>'.'</body></html>';
         
 
         $remitente = "";                             //Escribir aqui el correo de donde se enviarán
-        $nombre = "Empresa Name";                    //Nombre del remitente
+        $nombre = "BH Salud y Belleza";                    //Nombre del remitente
         $host = "smtp.gmail.com";                       //Servidor SMPT a utilizar (coincidir con dominio de remitente)
         $port = "587";                                  //o 465
         $SMTPAuth = "login";
