@@ -806,28 +806,28 @@
             
                                 <div class="mb-3">
                                     <label for="nombre" class="form-label">Nombre</label>
-                                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+                                    <input type="text" name="nombretxt" id="nombretxt" class="form-control" placeholder="Ingresa tu nombre" required>
                                     <span class="invalid-feedback">No dejes vacío este campo</span>
                                     <span class="valid-feedback">Correcto</span>
                                 </div>
             
                                 <div class="mb-3">
                                     <label for="telefono" class="form-label">Telefono</label>
-                                    <input type="tel" name="telefono" id="telefono" class="form-control" placeholder="Ingresa tu telefono" required>
+                                    <input type="tel" name="telefonotxt" id="telefonotxt" class="form-control" placeholder="Ingresa tu telefono" required>
                                     <span class="invalid-feedback">No dejes vacío este campo</span>
                                     <span class="valid-feedback">Correcto</span>
                                 </div>
     
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa email destino" required>
+                                    <input type="email" name="emailtxt" id="emailtxt" class="form-control" placeholder="Ingresa email destino" required>
                                     <span class="invalid-feedback">Ingresa un correo válido</span>
                                     <span class="valid-feedback">Correcto</span>
                                 </div>
             
                                 <div class="mb-3">
                                     <label for="mensaje" class="form-label">Comentario</label>
-                                    <textarea name="mensaje" id="mensaje" cols="20" rows="3" class="form-control" required></textarea>
+                                    <textarea name="mensajetxt" id="mensajetxt" cols="20" rows="3" class="form-control" required></textarea>
                                     <span class="invalid-feedback">No dejes vacío este campo</span>
                                     <span class="valid-feedback">Correcto</span>
                                 </div>
@@ -929,7 +929,15 @@
    <!-- Owl carousel -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="js/scroll.js"></script>
+    <!-- Scroll y nav  -->
+   <script src="js/scroll.js"></script>
+
+   <!-- Validacion formulario bootstrap -->
+   <script src="js/bs-validacion.js"></script>
+
+   <!-- async envío de formulario -->
+   <script src="js/email.js"></script>
+
 
     <script>
         if(screen.width<600){
