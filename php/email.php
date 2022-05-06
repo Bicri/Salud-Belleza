@@ -12,6 +12,7 @@ include("../Mailer/src/Exception.php");
         $body = '<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"></head><body>'.'<strong>Hola, mi nombre es '.$nombre.'</strong> <br><br>'.$cuerpo.'<br><br> <i>Atte. '.$nombre.'<br>'.'Numero: '.$numero.'</i>'.'</body></html>';
         
 
+
         $remitente = "";                             //Escribir aqui el correo de donde se enviarán
         $nombre = "BH Salud y Belleza";                    //Nombre del remitente
         $host = "smtp.gmail.com";                       //Servidor SMPT a utilizar (coincidir con dominio de remitente)
@@ -19,6 +20,16 @@ include("../Mailer/src/Exception.php");
         $SMTPAuth = "login";
         $_SMTPSecure = "tls";                           //o ssl, pero debe incluir SMTPOptions
         $contrasena = "";                               //Escribir contraseña del correo remitente
+                                                        // https://groups.google.com/g/publicesvfoxpro/c/S6vc9ORN4Uw?pli=1
+        /**
+         * Para contraseña
+         * 1 Tener seguridad en dos pasos activa
+         * 2 En el buscador, escribir "contraseña de aplicacion"
+         * 3 Gmail pedirá la contraseña
+         * 4 Seleccionar el servicio de correo
+         * 5 Seleccionar el dispositivo (Puede seleccionar otro y poner un nombre representativo) este apartado es informativo
+         * Ingresar la contraseña que te da google en la variable de contraseña
+         */
 
 
         try{
