@@ -410,5 +410,8 @@ img{
     .last{
         height: 1rem;
     }
+    .falsa-ancla:first-of-type{
+        height: 5rem;
+    }
 }
 
