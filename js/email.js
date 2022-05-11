@@ -1,4 +1,18 @@
 
+const nombre = document.querySelector('#nombretxt');
+nombre.addEventListener('input', e => {
+  nombre.value = nombre.value.replace( /[^a-z,A-Z,( ),á,é,í,ó,ú,Á,É,Í,Ó,Ú]|(,)|^\s|( ( ){1})/, ''); /* Expresion regular que que se escriba solo lo que está dentro de los corchetes y no permite ingresar mas de un espacio en blanco */
+})
+
+const telefono = document.querySelector('#telefonotxt');
+telefono.addEventListener('input', e => {
+  telefono.value = telefono.value.replace( /\D/, ''); /* Expresion regular que busca solo letras y las remplaza por un '' */
+})
+
+
+
+
+
 const enviarCorreo = async (formulario) => {
     /* let peticion = {"nombre":"Angel","destino":"correo@gmail.com","asunto":"asunto",
       "numero":"51","mensaje":"Cuerpo del mensaje"}; */ 
@@ -28,11 +42,7 @@ const enviarCorreo = async (formulario) => {
     {
 
       let formularioDatos = new FormData(formulario);
-      //console.log(formularioDatos.get("destino"))
-      const toastEl = document.querySelector("#toast");
-      const toast = new bootstrap.Toast(toastEl);
-      toast.show();
-      const body = document.querySelector('#bodyToast');
+ 
       enviarCorreo(formularioDatos)
         .then((response) => {      
           console.log(response);
@@ -41,10 +51,7 @@ const enviarCorreo = async (formulario) => {
           {
             throw { status: response.status, statusText: response.statusText }
           }else{
-            body.textContent = "";
-            body.classList.remove('justify-content-end');
-            body.textContent = response;
-            toast.show();
+
             formulario.classList.remove('was-validated');
             document.querySelector('#nombretxt').value = "";
             document.querySelector('#emailtxt').value = "";
@@ -54,9 +61,7 @@ const enviarCorreo = async (formulario) => {
             
         })
         .catch((err) => {
-          body.textContent = "";
-          body.textContent = err.status + " " + err.statusText + " No se envió el mensaje";
-          toast.show();
+          const error = err.status + " " + err.statusText + " No se envió el mensaje";
         });
     }
 
