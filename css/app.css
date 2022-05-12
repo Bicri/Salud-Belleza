@@ -383,8 +383,12 @@ img{
     border-radius: 1rem !important;
  }
 
- #toast div{
+ .modal-header, .modal-body, .modal-footer{
     background-color: #F2F4FF !important;
+ }
+
+ .modal-footer button{
+    padding: 0.5rem 1rem;
  }
 
 

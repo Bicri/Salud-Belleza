@@ -845,28 +845,8 @@
             
             
                             
-                            <input class="btn-ghost round d-inline-block fs-2 fw-bold sin-transparent" type="submit" value="Enviar" id="btnEnviar">
+                            <input class="btn-ghost round d-inline-block fs-2 fw-bold sin-transparent" type="submit" value="Enviar" id="btnEnviar" >
                             
-                            
-                            <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
-                                <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                                    <div class="toast-header fs-5">
-                                        <strong class="me-auto">Estado</strong>
-                                        <small>Hace unos segundos</small>
-                                        <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificación" class="btn-close"></button>
-                                    </div>
-                                    <div class="toast-body fs-5 d-flex flex-md-row justify-content-end" id="bodyToast">
-            
-                                        <span class="b-block">Enviando...</span>
-                                        <div class="d-flex justify-content-center"> <!-- end o start en justify -->
-                                            <div class="spinner-border text-primary col-6" role="status">
-                                                <span class="visually-hidden">Cargando...</span> 
-                                            </div> <!--Agrgar roles cuando no queda claro que hace un elemnto-->
-                                        </div>
-            
-                                    </div>
-                                </div>
-                            </div>
             
                         </form>
                     </div>
@@ -927,6 +907,26 @@
         </div>
 
     </footer>
+
+
+    <!-- Seccion del modal -->
+        <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="title" aria-hidden="true" style="z-index: 9900;">
+            <div class="modal-dialog modal-dialog-centered" data-backdrop="static" data-keyboard="false">
+                <div class="modal-content">
+                    <div class="modal-header border-0 rounded-top">
+                        <h3 id="titulo-modal" class="modal-title">Enviando</h3>
+                        <button id="tache-modal" data-bs-dismiss="modal" type="button" class="btn-close" disabled="disabled"></button>
+                    </div>
+                    <div class="modal-body border-0 d-flex justify-content-center">
+                        <div id="cuerpo-modal" class="spinner-border text-dark"></div>
+                    </div>
+                    <div class="modal-footer border-0 rounded-end">
+                        <button id="boton-modal" class="btn-ghost round d-inline-block fs-2 fw-bold sin-transparent" type="button"  data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Fin sección del modal -->
 
 
    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->

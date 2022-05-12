@@ -14,8 +14,6 @@ telefono.addEventListener('input', e => {
 
 
 const enviarCorreo = async (formulario) => {
-    /* let peticion = {"nombre":"Angel","destino":"correo@gmail.com","asunto":"asunto",
-      "numero":"51","mensaje":"Cuerpo del mensaje"}; */ 
     try {
         
       const resp = await fetch("php/email.php", {
@@ -32,14 +30,21 @@ const enviarCorreo = async (formulario) => {
     }
   };
  
+  const modal = new bootstrap.Modal(document.getElementById('modal'))
+  const tituloModal = document.getElementById('#titulo-modal');
+  const tacheModal = document.getElementById('#tache-modal');
+  const botonModal = document.getElementById('#boton-modal');
+  const cuerpoModal = document.getElementById('#cuerpo-modal');
+
   const formulario = document.querySelector("#formularioEmail");
-  //const alerta = document.querySelector("#alerta");
-  //console.log(formulario[0].value)
+
   formulario.addEventListener("submit", (e) => {
     e.preventDefault();
 
     if(document.querySelector('#nombretxt').value.length>0 && document.querySelector('#emailtxt').value.length>0 && document.querySelector('#telefonotxt').value.length>0 && document.querySelector('#mensajetxt').value.length>0)
     {
+      modal.show();
+
 
       let formularioDatos = new FormData(formulario);
  
@@ -63,6 +68,13 @@ const enviarCorreo = async (formulario) => {
         .catch((err) => {
           const error = err.status + " " + err.statusText + " No se envió el mensaje";
         });
+        // modal.hide();
+
+        // tacheModal.disabled = false;
+        // tituloModal.value.textContent = "Estatus"
+        // modal.show();
+
+
     }
 
   });
