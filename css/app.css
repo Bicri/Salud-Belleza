@@ -419,3 +419,7 @@ img{
     }
 }
 
+
+.ocultar{
+    display: none !important;
+}

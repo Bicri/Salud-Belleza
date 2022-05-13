@@ -911,17 +911,17 @@
 
     <!-- Seccion del modal -->
         <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="title" aria-hidden="true" style="z-index: 9900;">
-            <div class="modal-dialog modal-dialog-centered" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered" >
                 <div class="modal-content">
                     <div class="modal-header border-0 rounded-top">
-                        <h3 id="titulo-modal" class="modal-title">Enviando</h3>
-                        <button id="tache-modal" data-bs-dismiss="modal" type="button" class="btn-close" disabled="disabled"></button>
+                        <h3 id="tituloModal" class="modal-title">Estado</h3>
+                        <button id="tacheModal" data-bs-dismiss="modal" type="button" class="btn-close"></button>
                     </div>
                     <div class="modal-body border-0 d-flex justify-content-center">
-                        <div id="cuerpo-modal" class="spinner-border text-dark"></div>
+                        <span id="respuesta">Procesando correo...</span>
                     </div>
                     <div class="modal-footer border-0 rounded-end">
-                        <button id="boton-modal" class="btn-ghost round d-inline-block fs-2 fw-bold sin-transparent" type="button"  data-bs-dismiss="modal">Aceptar</button>
+                        <button id="botonModal" class="btn-ghost round d-inline-block fs-2 fw-bold sin-transparent" type="button"  data-bs-dismiss="modal">Aceptar</button>
                     </div>
                 </div>
             </div>

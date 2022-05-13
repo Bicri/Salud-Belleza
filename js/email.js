@@ -31,10 +31,10 @@ const enviarCorreo = async (formulario) => {
   };
  
   const modal = new bootstrap.Modal(document.getElementById('modal'))
-  const tituloModal = document.getElementById('#titulo-modal');
-  const tacheModal = document.getElementById('#tache-modal');
-  const botonModal = document.getElementById('#boton-modal');
-  const cuerpoModal = document.getElementById('#cuerpo-modal');
+  const tituloModal = document.getElementById('tituloModal');
+  const tacheModal = document.getElementById('tacheModal');
+  const botonModal = document.getElementById('botonModal');
+  const respuesta = document.getElementById('respuesta');
 
   const formulario = document.querySelector("#formularioEmail");
 
@@ -43,6 +43,10 @@ const enviarCorreo = async (formulario) => {
 
     if(document.querySelector('#nombretxt').value.length>0 && document.querySelector('#emailtxt').value.length>0 && document.querySelector('#telefonotxt').value.length>0 && document.querySelector('#mensajetxt').value.length>0)
     {
+      respuesta.innerHTML = "Procesando...";
+      tituloModal.textContent = "Estado";
+      tacheModal.classList.add('ocultar');
+      botonModal.classList.add('ocultar');
       modal.show();
 
 
@@ -50,13 +54,16 @@ const enviarCorreo = async (formulario) => {
  
       enviarCorreo(formularioDatos)
         .then((response) => {      
-          console.log(response);
+          // console.log(response);
+          tacheModal.classList.remove('ocultar');
+          botonModal.classList.remove('ocultar');
           
           if (response!="Correo enviado con éxito")
           {
             throw { status: response.status, statusText: response.statusText }
           }else{
-
+            respuesta.textContent = "Correo enviado exitosamente";
+            tituloModal.textContent = "Enviado";
             formulario.classList.remove('was-validated');
             document.querySelector('#nombretxt').value = "";
             document.querySelector('#emailtxt').value = "";
@@ -67,12 +74,11 @@ const enviarCorreo = async (formulario) => {
         })
         .catch((err) => {
           const error = err.status + " " + err.statusText + " No se envió el mensaje";
+          // console.log(error);
+          respuesta.innerHTML = "Servicio no disponible";
+          tituloModal.textContent = "Error";
         });
-        // modal.hide();
 
-        // tacheModal.disabled = false;
-        // tituloModal.value.textContent = "Estatus"
-        // modal.show();
 
 
     }
